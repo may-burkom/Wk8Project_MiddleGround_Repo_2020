@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>MiddleGround</title>
+</head>
+<body>
+    <h1>MiddleGround</h1>
+    <div id="wrapper">
+        <p>Check out all the interesting items be have displayed here! If you see something you want to buy, scroll to the bottom and fill in the information on the item you want to purchase, along with your information.</p>
+
+        <div id="item1">
+            <table>
+                <tr>
+                    <td>Item No.</td>
+                    <td>#0678dt6</td>
+                    <td colspan="1" rowspan="4"><img src="https://cdn.shopify.com/s/files/1/1133/4136/products/table_11_large.jpeg?v=1527776127" alt="bunk bed morden table"></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>Bunk Bed Morden Table</td>
+                </tr>
+                <tr>
+                    <td>Item Description:</td>
+                    <td>Modern table with unconventional design suits to every interior. Elegant look and solid construction is the best choice for your needs. Classic design allows to create many room arrangements.</td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td>PGK 45.99</td>
+                </tr>
+            </table>
+        </div>
+        <div id="item2">
+            <table>
+                <tr id="item2No">
+                    <td>Item No.</td>
+                </tr>
+                <tr id="item2Name">
+                    <td>Name:</td>
+                </tr>
+                <tr id="item2Descr">
+                    <td>Item Description:</td>
+                </tr>
+                <tr id="item2Price">
+                    <td>Price:</td>
+                </tr>
+            </table>
+        </div>
+        <div id="item3">
+            <table>
+                <tr>
+                    <td>Item No.</td>
+                    <td id="item3No"></td>
+                    <td colspan="1" rowspan="4"><img id="item3Img" src=""></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td id="item3Name"></td>
+                </tr>
+                <tr>
+                    <td>Item Description:</td>
+                    <td id="item3Descr"></td>
+                </tr>
+                <tr>
+                    <td>Price:</td>
+                    <td id="item3Price"></td>
+                </tr>
+            </table>
+        </div>
+        <form id="" action="" method="">
+            <P>Fill in the form with the your details and the correct <b>item number</b> of the item you wish to purchase. </p>
+            <table>
+                <tr>
+                    <td><label for="productItmNo">Item No.:</label></td>
+                    <td><input type="text" id="productItmNo" name="productItmNo"></td>
+                </tr>
+                <tr>
+                    <td><label for="buyerName">Name:</label></td>
+                    <td><input type="text" id="buyerName" name="buyerName"></td>
+                </tr>
+                <tr>
+                    <td><label for="buyerEmail">E-mail:</label></td>
+                    <td><input type="email" id="buyerEmail" name="buyerEmail"></td>
+                </tr>
+                <tr>
+                    <td><label for="buyerPhn">Phone Number:</label></td>
+                    <td><input type="number" id="buyerPhn" name="buyerPhn"></td>
+                </tr>
+            </table>
+            <button>SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js" defer></script>
+    <title>MiddleGround</title>
+</head>
+<body>
+    <h1>MiddleGround</h1>
+    <div id="wrapper">
+        <p>Here is where you can advertise you prodcuts. Make sure you fill in all the relevant information regarding the produnct and assign an item number for your product as numbers and lowercase letters.</p>
+
+        <div id="display"></div>
+        <form id="itemForm" action="/store-item" method="POST">
+            <table>
+                <tr>
+                    <td><label for="itmNo">Item No.:</label></td>
+                    <td><input type="text" id="itmNo" name="itmNo" value="#"></td>
+                </tr>
+                <tr>
+                    <td><label for="itmName">Item Name:</label></td>
+                    <td><input type="text" id="itmName" name="itmName"></td>
+                </tr>
+                <tr>
+                    <td><label for="itmDescription">Item Description</label></td>
+                    <td><textarea name="itmDescription" id="itmDescription" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="itmPic">Item Picture Url:</label></td>
+                    <td><input type="text" id="itmPic" name="itmPic"></td>
+                </tr>
+                <tr>
+                    <td><label for="itmPrice">Item Price:</label></td>
+                    <td><input type="text" id="itmPrice" name="itmPrice" value="PGK "></td>
+                </tr>
+            </table>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
